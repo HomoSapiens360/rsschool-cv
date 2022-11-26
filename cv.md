@@ -5,6 +5,7 @@
 + **Phone:** +998977187882
 + **E-mail:** vaga1al@mail.ru
 + **Telegram:** @HomoSapiens
++ **GitHub:** @HomoSapiens360
 
 ## About myself:
 

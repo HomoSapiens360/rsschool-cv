@@ -1,5 +1,5 @@
 # Vagif Alikperov
-![my photo](myphoto.jpg)
+![my photo](https://github.com/HomoSapiens360/Images/blob/main/myphoto.jpg)
 
 ## Contact information:
 + **Phone:** +998977187882
@@ -51,5 +51,5 @@ public String parenBit(String str) {
 
 ## Languages:
 * English - Intermediate (according to the online test at efset.org)   
-![certificate](/Efset_1.png)
+![certificate](https://github.com/HomoSapiens360/Images/blob/main/Efset_1.png)
 * Russian - Native

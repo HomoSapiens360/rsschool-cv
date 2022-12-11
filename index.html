@@ -5,12 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="assets/img/cv-icon2.ico">
     <link rel="stylesheet" href="style.css">
+    <title>cv</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                    <li class="nav__item"><a href="#summary" class="nav__link">Summary</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#code" class="nav__link">Code</a></li>
+                    <li class="nav__item"><a href="#courses" class="nav__link">Courses</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="general">
+                <img src="assets/img/myphoto.jpg" alt="my photo" class="general__picture">
+                <div class="general__content">
+                    <h1 class="general__title">Vagif Alikperov</h1>
+                    <p class="general__description">Junior frontend developer</p>
+                </div>
+                <div class="general__content"></div>
+            </section>
+            <div class="row">
+                <section class="contacts column" id="contacts">
+                    <h2 class="contacts__title title">Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item param contacts__list_address">Tashkent / Uzbekistan</li>
+                        <li class="contacts__item param contacts__list_email">Email:<span
+                                class="contacts__value value">xboxbender@mail.ru</span></li>
+                        <li class="contacts__item param contacts__list_github">GitHub:<span
+                                class="contacts__value value">@HomoSapiens360</span>
+                        </li>
+                        <li class="contacts__item param contacts__list_telegram">Telegram:<span
+                                class="contacts__value value">@HomoSapiens</span>
+                        </li>
+                        <li class="contacts__item param contacts__list_discord">Discord:<span
+                                class="contacts__value value">Vagif#3862</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="summary column" id="summary">
+                    <h2 class="summary__title title">Summary</h2>
+                    <p class="summary__content param">
+                        My goal is to become a frontend developer first and then a full stack developer. I have good
+                        logical and analytical thinking, I can set and achieve goals, I am a diligent, responsible
+                        person.
+                    </p>
+                </section>
+                <section class="skills column" id="skills">
+                    <h2 class="skills__title title">Skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item param">Java development:<span class="skills__value value">Java
+                                Basic</span>
+                        </li>
+                        <li class="skills__item param">Web-development:<span class="skills__value value">HTML5, CSS,
+                                JavaScript</span>
+                        </li>
+                        <li class="skills__item param">Frameworks and libraries:<span
+                                class="skills__value value">React</span></li>
+                        <li class="skills__item param">Version control:<span class="skills__value value">GIT,
+                                GitHub</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="code column" id="code">
+                    <h2 class="code__title title">Code</h2>
+                    <p class="code__description">
+                        Code is writing on Java. You can find the example on <a class="code__link"
+                            href="https://codingbat.com/prob/p137918" target="_blank">CodingBat.com</a>
+                    </p>
+                    <pre>
+Given a string that contains a single pair of parenthesis, compute recursively 
+a new string made of only of the parenthesis and their contents, 
+so "xyz(abc)123" yields "(abc)".
+parenBit("xyz(abc)123") → "(abc)"
+parenBit("x(hello)") → "(hello)"
+parenBit("(xy)1") → "(xy)"
+    
+public String parenBit(String str) {
+    if(str.isEmpty())
+        return "";
+    if(str.charAt(0) == '(') {
+        return "(" + parenBit(str.substring(1));
+    }
+    if(str.charAt(0) == ')')
+        return ")";
+    if(str.indexOf("(") > 0)
+        return parenBit(str.substring(str.indexOf("(")));
+    return str.charAt(0) + parenBit(str.substring(1));
+}
+                        </pre>
+                </section>
+                <section class="courses column" id="courses">
+                    <h2 class="courses__title title">Courses</h2>
+                    <ul class="courses__list">
+                        <li class="courses__item param">CodeBasics:<span class="courses__value value">HTML for
+                                beginners</span>
+                        </li>
+                        <li class="courses__item param">CodeBasics:<span class="courses__value value">CSS for
+                                beginners</span></li>
+                        <li class="courses__item param">GeekBrains:<span class="courses__value value">GIT
+                                introduction</span></li>
+                        <li class="courses__item param">GeekBrains:<span class="courses__value value">Java Core</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="projects column" id="projects">
+                    <h2 class="projects__title title">Projects</h2>
+                    <p class="projects__text param">I don't have any projects yet :)</p>
+                </section>
+                <section class="education column" id="education">
+                    <h2 class="education__title title">Education</h2>
+                    <p class="education__text param">
+                        Mirzo-Ulugbek Professional College of Informatic
+                    </p>
+                </section>
+                <section class="languages column" id="languages">
+                    <h2 class="languages__title title">Languages</h2>
+                    <ul class="languages__list">
+                        <li class="languages__text param">Russian: <span class="languages__value value">Native</span>
+                        </li>
+                        <li class="languages__text param">English: <span class="languages__value value">B1
+                                Intermediate</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column footer__year">&copy; 2022</div>
+                <div class="footer__column">
+                    <a href="https://github.com/HomoSapiens360" class="footer__link footer__link_github"
+                        target="_blank">HomoSapiens360</a>
+                </div>
+                <div class="footer__column ">
+                    <a href="https://rs.school/js-stage0/" class="footer__link footer__link_rsschool "
+                        target="_blank"><img src="assets/img/rsschool_logo.png" alt="RS School logo"
+                            class="RS_logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

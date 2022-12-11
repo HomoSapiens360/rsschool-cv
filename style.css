@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .main .footer {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #557A95;
+}
+
+.nav {
+    padding: 10px;
+    margin: 0;
+}
+
+.nav__list {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 880px;
+    display: table;
+}
+
+.nav__item {
+    list-style: none;
+    display: inline-block;
+    border-left: 1px solid #395264;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item:first-child {
+    border-left: none;
+}
+
+.nav__link,
+.nav__link:visited {
+    padding: 10px 14px;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+a.nav__link:hover {
+    background-color: #7395AE;
+    color: #000;
+}
+
+.main {
+    background-color: #fff;
+    color: #2B3D4A;
+}
+
+.general__picture {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.general {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 7px solid #006262;
+    padding: 20px 0;
+}
+
+.general__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.general__description {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.general__title::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    border-bottom: 1px solid #006262;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.column {
+    flex: 0 0 50%;
+    align-items: flex-start;
+    border-bottom: 1px solid #006262;
+    margin: 0 -10px;
+    padding: 0 10px 20px 10px;
+}
+
+.languages,
+.education {
+    border: none;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contacts__item {
+    padding: 0 0 0 28px;
+}
+
+.contacts__list_address {
+    background: url('assets/img/location_logo.png') 0 5px/20px 20px no-repeat
+}
+
+.contacts__list_email {
+    background: url('assets/img/email_logo.png') 0 5px/20px 20px no-repeat
+}
+
+.contacts__list_telegram {
+    background: url('assets/img/telegram_logo.png') 0 5px/20px 20px no-repeat
+}
+
+.contacts__list_github {
+    background: url('assets/img/icons8-github-25.png') -3px 2px/27px 27px no-repeat
+}
+
+.contacts__list_discord {
+    background: url('assets/img/discord_logo.png') 0 5px/20px 20px no-repeat
+}
+
+.param {
+    line-height: 30px;
+}
+
+.value {
+    color: #006262;
+    padding: 5px;
+}
+
+.skills__item,
+.courses__item {
+    padding: 0 0 0 25px;
+    background: url('assets/img/list_logo.png') -2px 5px/20px 20px no-repeat;
+}
+
+.languages__text {
+    padding: 0 0 0 2px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+.code__link,
+.code__link:visited {
+    text-decoration: none;
+    color: #318CE7;
+}
+
+.code__link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #557A95;
+    color: #fff;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.RS_logo {
+    height: 40px;
+}
+
+.footer__link,
+.footer__link:visited {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 0 4px 30px;
+}
+
+.footer__link_github {
+    background: url('assets/img/icons8-github-25.png') no-repeat;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+
+.footer__column {
+    padding: 5px 0;
+}
+
+@media (max-width: 880px) {
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 0 0 100%;
+        align-items: flex-start;
+    }
+}

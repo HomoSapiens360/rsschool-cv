@@ -13,6 +13,9 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="burger">
+                <div class="burger__button">&#9776;</div>
+            </div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
@@ -123,7 +126,11 @@ public String parenBit(String str) {
                 </section>
                 <section class="projects column" id="projects">
                     <h2 class="projects__title title">Projects</h2>
-                    <p class="projects__text param">I don't have any projects yet :)</p>
+                    <ul class="projects__list">
+                        <li class="projects__item param"><a href="https://homosapiens360.github.io/rsschool-cv/cv"
+                                class="projects__link value">CV1</a></li>
+                    </ul>
+                    <!--  <p class="projects__text param">I don't have any projects yet :)</p> -->
                 </section>
                 <section class="education column" id="education">
                     <h2 class="education__title title">Education</h2>
@@ -159,6 +166,8 @@ public String parenBit(String str) {
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ ul>li {
 
 .container {
     max-width: 1440px;
-    min-width: 585px;
+    min-width: 360px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -42,7 +42,7 @@ body {
     top: 1px;
     left: 20px;
     visibility: hidden;
-    z-index: 20;
+    z-index: 3;
 }
 
 
@@ -96,54 +96,6 @@ a.nav__link:hover {
     color: #000;
 }
 
-
-@media (max-width: 879px) {
-
-    body.burger_active {
-        overflow: hidden;
-    }
-
-    .container.burger_active {
-        background-color: rgba(79, 81, 82, 0.8);
-    }
-
-    .burger {
-        visibility: visible;
-    }
-
-    nav {
-        visibility: hidden;
-    }
-
-    .nav__list.burger_active {
-        position: fixed;
-        height: 100%;
-        width: 300px;
-        background-color: #557A95;
-        visibility: visible;
-        top: 0;
-        left: 0;
-        padding-top: 50px;
-    }
-
-    .nav__list.burger_active li {
-        display: block;
-        width: 100%;
-        padding: 15px 0 15px 5px;
-    }
-
-    .nav__link.burger_active {
-        display: block;
-    }
-}
-
-
-
-.main {
-    background-color: #fff;
-    color: #2B3D4A;
-}
-
 .general__picture {
     max-width: 200px;
     border-radius: 50%;
@@ -181,6 +133,11 @@ a.nav__link:hover {
     bottom: 0;
     width: 50%;
     border-bottom: 1px solid #006262;
+}
+
+.main {
+    background-color: #fff;
+    color: #2B3D4A;
 }
 
 .row {
@@ -291,11 +248,12 @@ projects__link:visited {
     display: block;
     color: #fff;
     text-decoration: none;
-    padding: 4px 0 4px 30px;
+    padding: 4px 0;
 }
 
 .footer__link_github {
     background: url('assets/img/icons8-github-25.png') no-repeat;
+    padding-left: 28px;
 }
 
 .footer__link:hover {
@@ -317,5 +275,73 @@ projects__link:visited {
     .column {
         flex: 0 0 100%;
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 879px) {
+
+    .general__picture {
+        width: 150px;
+    }
+
+    .general__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .general__description {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: none;
+    }
+
+    body.burger_active {
+        overflow: hidden;
+    }
+
+    .container.burger_active {
+        background-color: rgba(79, 81, 82, 0.8);
+    }
+
+    .burger {
+        visibility: visible;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .nav__list.burger_active {
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        background-color: #557A95;
+        visibility: visible;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .nav__list.burger_active li {
+        display: block;
+        width: 100%;
+        padding: 15px 0 15px 5px;
+    }
+
+    .nav__link.burger_active {
+        display: block;
+    }
+
+    .RS_logo {
+        height: 30px;
     }
 }

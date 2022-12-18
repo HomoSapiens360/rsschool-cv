@@ -88,27 +88,29 @@
                         Code is writing on Java. You can find the example on <a class="code__link"
                             href="https://codingbat.com/prob/p137918" target="_blank">CodingBat.com</a>
                     </p>
-                    <pre>
-Given a string that contains a single pair of parenthesis, compute recursively 
-a new string made of only of the parenthesis and their contents, 
-so "xyz(abc)123" yields "(abc)".
-parenBit("xyz(abc)123") → "(abc)"
-parenBit("x(hello)") → "(hello)"
-parenBit("(xy)1") → "(xy)"
-    
-public String parenBit(String str) {
-    if(str.isEmpty())
-        return "";
-    if(str.charAt(0) == '(') {
-        return "(" + parenBit(str.substring(1));
-    }
-    if(str.charAt(0) == ')')
-        return ")";
-    if(str.indexOf("(") > 0)
-        return parenBit(str.substring(str.indexOf("(")));
-    return str.charAt(0) + parenBit(str.substring(1));
-}
-                        </pre>
+                    <code>
+Given a string that contains a single 
+pair of parenthesis, compute 
+recursively a new string made of only
+of the parenthesis and their contents,
+so: "xyz(abc)123" yields "(abc)". <br>
+parenBit("xyz(abc)123") → "(abc)" <br>
+parenBit("x(hello)") → "(hello)" <br>
+parenBit("(xy)1") → "(xy)" <br>
+<br>    
+public String parenBit(String str) { <br>
+&nbsp;if(str.isEmpty()) <br>
+&nbsp;&nbsp;  return ""; <br>
+&nbsp;if(str.charAt(0) == '(') { <br>
+&nbsp;&nbsp;  return "(" + parenBit(str.substring(1)); <br>
+&nbsp;} <br>
+&nbsp;if(str.charAt(0) == ')') <br>
+&nbsp;&nbsp;  return ")"; <br>
+&nbsp;if(str.indexOf("(") > 0) <br>
+&nbsp;&nbsp;  return parenBit(str.substring (str.indexOf("("))); <br>
+&nbsp;return str.charAt(0) + parenBit(str.substring(1)); <br>
+} <br>
+                        </code>
                 </section>
                 <section class="courses column" id="courses">
                     <h2 class="courses__title title">Courses</h2>
